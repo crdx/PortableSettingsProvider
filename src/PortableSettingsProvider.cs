@@ -32,11 +32,11 @@ namespace crdx.Settings
          get
          {
             XmlNode settingsNode = GetSettingsNode(_localSettingsNodeName);
-            XmlNode machineNode = settingsNode.SelectSingleNode(Environment.MachineName);
+            XmlNode machineNode = settingsNode.SelectSingleNode(Environment.MachineName.ToLowerInvariant());
 
             if (machineNode == null)
             {
-               machineNode = _rootDocument.CreateElement(Environment.MachineName);
+               machineNode = _rootDocument.CreateElement(Environment.MachineName.ToLowerInvariant());
                settingsNode.AppendChild(machineNode);
             }
 
