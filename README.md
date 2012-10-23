@@ -6,7 +6,7 @@
 
 1. Add `src/PortableSettingsProvider.cs` to your project.
 
-2. For each setting that should be portable, set the `Provider` property to the `PortableSettingsProvider` class, with a namespace qualifier if required. (By default this would be `crdx.Settings.PortableSettingsProvider`, but feel free to change the namespace and/or class name as you wish.)
+2. For each setting that should be portable, set the `Provider` property to the `PortableSettingsProvider` class, with a namespace qualifier if required. (By default this would be `crdx.Settings.PortableSettingsProvider`, but feel free to change the namespace and/or class name if you want.)
 
    ![The Properties Dialog](https://raw.github.com/crdx/PortableSettingsProvider/master/static/setting-properties.png)
 
