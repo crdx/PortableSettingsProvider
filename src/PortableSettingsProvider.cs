@@ -137,13 +137,20 @@ namespace crdx.Settings
             ? _globalSettingsNode
             : _localSettingsNode;
 
-         XmlNode settingNode = targetNode.SelectSingleNode(propertyValue.Name);
+         XmlNode settingNode = targetNode.SelectSingleNode(string.Format("setting[@name='{0}']", propertyValue.Name));
 
          if (settingNode != null)
             settingNode.InnerText = propertyValue.SerializedValue.ToString();
          else
          {
-            settingNode = CreateTextElement(propertyValue.Name, propertyValue.SerializedValue.ToString());
+            settingNode = _rootDocument.CreateElement("setting");
+
+            XmlAttribute nameAttribute = _rootDocument.CreateAttribute("name");
+            nameAttribute.Value = propertyValue.Name;
+
+            settingNode.Attributes.Append(nameAttribute);
+            settingNode.InnerText = propertyValue.SerializedValue.ToString();
+
             targetNode.AppendChild(settingNode);
          }
       }
@@ -151,7 +158,7 @@ namespace crdx.Settings
       private string GetValue(SettingsProperty property)
       {
          XmlNode targetNode = IsGlobal(property) ? _globalSettingsNode : _localSettingsNode;
-         XmlNode settingNode = targetNode.SelectSingleNode(property.Name);
+         XmlNode settingNode = targetNode.SelectSingleNode(string.Format("setting[@name='{0}']", property.Name));
 
          if (settingNode == null)
             return property.DefaultValue != null ? property.DefaultValue.ToString() : string.Empty;
@@ -168,14 +175,6 @@ namespace crdx.Settings
          }
 
          return false;
-      }
-
-      private XmlNode CreateTextElement(string name, string innerText)
-      {
-         XmlNode xmlElement = _rootDocument.CreateElement(name);
-         xmlElement.InnerText = innerText;
-
-         return xmlElement;
       }
 
       private XmlNode GetSettingsNode(string name)
