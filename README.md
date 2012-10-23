@@ -22,7 +22,7 @@ Two types of settings are supported: global (roaming) and local.
 
 ### Global (aka "Roaming")
 
-Global settings are not tied to the current machine and are available to all running instances of the application, regardless of where it's running from.
+Global settings are not tied to the current computer and are available to all running instances of the application, regardless of where it's running from.
 
 ### Local
 
