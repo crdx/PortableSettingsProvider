@@ -12,9 +12,9 @@ namespace crdx.Settings
 {
    public sealed class PortableSettingsProvider : SettingsProvider, IApplicationSettingsProvider
    {
-      private const string _rootNodeName = "Settings";
-      private const string _localSettingsNodeName = "LocalSettings";
-      private const string _globalSettingsNodeName = "GlobalSettings";
+      private const string _rootNodeName = "settings";
+      private const string _localSettingsNodeName = "localSettings";
+      private const string _globalSettingsNodeName = "globalSettings";
       private const string _className = "PortableSettingsProvider";
       private XmlDocument _xmlDocument;
 

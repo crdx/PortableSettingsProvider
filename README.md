@@ -32,9 +32,9 @@ Local settings are tied to the computer on which the application is running. The
 
 The application settings are stored in an XML file in the same directory as the application. The filename is the same as the application's executable, with the file extension `settings`.
 
-Global settings are stored in the `/Settings/GlobalSettings` node.
+Global settings are stored in the `/settings/globalSettings` node.
 
-Local settings are stored in the `/Settings/LocalSettings/[ComputerName]` node.
+Local settings are stored in the `/settings/localSettings/[ComputerName]` node.
 
 ## Bugs or contributions
 
