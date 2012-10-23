@@ -67,14 +67,15 @@ namespace crdx.Settings
                }
                catch (Exception)
                {
-                  if (_xmlDocument.SelectSingleNode(_rootNodeName) != null)
-                     return _xmlDocument;
 
-                  _xmlDocument = new XmlDocument();
-                  _xmlDocument.AppendChild(_xmlDocument.CreateXmlDeclaration("1.0", "utf-8", string.Empty));
-                  _xmlDocument.AppendChild(_xmlDocument.CreateElement(_rootNodeName));
                }
+
+               if (_xmlDocument.SelectSingleNode(_rootNodeName) != null)
+                  return _xmlDocument;
+
+               _xmlDocument = GetBlankXmlDocument();
             }
+
             return _xmlDocument;
          }
       }
@@ -188,6 +189,15 @@ namespace crdx.Settings
          }
 
          return settingsNode;
+      }
+
+      public XmlDocument GetBlankXmlDocument()
+      {
+         XmlDocument blankXmlDocument = new XmlDocument();
+         blankXmlDocument.AppendChild(blankXmlDocument.CreateXmlDeclaration("1.0", "utf-8", string.Empty));
+         blankXmlDocument.AppendChild(blankXmlDocument.CreateElement(_rootNodeName));
+
+         return blankXmlDocument;
       }
 
       public void Reset(SettingsContext context)
