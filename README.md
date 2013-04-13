@@ -42,4 +42,4 @@ Open an [issue](http://github.com/crdx/PortableSettingsProvider/issues) or send 
 
 ## Licence
 
-[MIT](https://github.com/crdx/PortableSettingsProvider/blob/master/LICENCE.md).
+[MIT](LICENCE.md).
