@@ -38,7 +38,7 @@ Local settings are stored in the `/settings/localSettings/[ComputerName]` node.
 
 ## Bugs or contributions
 
-Open an [issue](http://github.com/crdx/PortableSettingsProvider/issues) or send a [pull request](http://github.com/crdx/PortableSettingsProvider/pulls).
+Open an [issue](https://github.com/crdx/PortableSettingsProvider/issues) or send a [pull request](https://github.com/crdx/PortableSettingsProvider/pulls).
 
 ## Licence
 
