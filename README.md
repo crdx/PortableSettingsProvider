@@ -36,7 +36,7 @@ Global settings are stored in the `/settings/globalSettings` node.
 
 Local settings are stored in the `/settings/localSettings/[ComputerName]` node.
 
-## Bugs or contributions
+## Contributions
 
 Open an [issue](https://github.com/crdx/PortableSettingsProvider/issues) or send a [pull request](https://github.com/crdx/PortableSettingsProvider/pulls).
 
