@@ -8,7 +8,7 @@ using System.Collections.Specialized;
 using System.Xml;
 using System.IO;
 
-namespace crdx.Settings
+namespace changeme.Settings
 {
     public sealed class PortableSettingsProvider : SettingsProvider, IApplicationSettingsProvider
     {
