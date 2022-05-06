@@ -1,6 +1,6 @@
 # PortableSettingsProvider
 
-**PortableSettingsProvider** is a C# implementation of `SettingsProvider` for portable applications. 
+**PortableSettingsProvider** is a C# implementation of `SettingsProvider` for portable applications.
 
 ## Usage
 
@@ -10,7 +10,7 @@
 
    ![The Properties Dialog](https://raw.github.com/crdx/PortableSettingsProvider/master/static/setting-properties.png)
 
-3. Optionally, set the `Roaming` property to `True` for global settings, or `False` for local settings. (See **Types** below for an explanation.) 
+3. Optionally, set the `Roaming` property to `True` for global settings, or `False` for local settings. (See **Types** below for an explanation.)
 
    Visual Studio currently defaults this to `False`.
 
