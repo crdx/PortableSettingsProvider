@@ -42,4 +42,4 @@ Open an [issue](https://github.com/crdx/PortableSettingsProvider/issues) or send
 
 ## Licence
 
-[MIT](LICENCE.md).
+[GPLv3](LICENCE).
