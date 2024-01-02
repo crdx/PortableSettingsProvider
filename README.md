@@ -8,7 +8,7 @@
 
 2. For each setting that should be portable, set the `Provider` property to the `PortableSettingsProvider` class, with a namespace qualifier if required. (By default this would be `changeme.Settings.PortableSettingsProvider` so make sure to substitute `changeme` for your namespace root.)
 
-   ![The Properties Dialog](https://raw.github.com/crdx/PortableSettingsProvider/master/static/setting-properties.png)
+   ![The Properties Dialog](https://raw.github.com/crdx/PortableSettingsProvider/main/static/setting-properties.png)
 
 3. Optionally, set the `Roaming` property to `True` for global settings, or `False` for local settings. (See **Types** below for an explanation.)
 
